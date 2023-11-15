@@ -17,9 +17,9 @@ namespace PracticaKornilovaMarushkina.Components
 
         public static void ClearHistory() //очистка
         {
-            App.isTeacher = false;
-            App.isEngineer = false;
-            App.isHeadDepartment = false;
+            //App.isTeacher = false;
+            //App.isEngineer = false;
+            //App.isHeadDepartment = false;
             components.Clear();
         }
 

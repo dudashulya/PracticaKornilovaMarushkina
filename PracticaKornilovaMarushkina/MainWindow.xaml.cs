@@ -13,7 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using PracticaKornilovaMarushkina.Components;
+//using PracticaKornilovaMarushkina.Components;
 using PracticaKornilovaMarushkina.Pages;
 
 namespace PracticaKornilovaMarushkina

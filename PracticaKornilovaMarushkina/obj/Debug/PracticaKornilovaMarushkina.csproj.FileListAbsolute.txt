@@ -20,3 +20,9 @@ C:\Users\212112\source\repos\PracticaKornilovaMarushkina\PracticaKornilovaMarush
 C:\Users\212112\source\repos\PracticaKornilovaMarushkina\PracticaKornilovaMarushkina\obj\Debug\Pages\DisciplinesPage.g.cs
 C:\Users\212112\source\repos\PracticaKornilovaMarushkina\PracticaKornilovaMarushkina\obj\Debug\Pages\DisciplinesPage.baml
 C:\Users\212112\source\repos\PracticaKornilovaMarushkina\PracticaKornilovaMarushkina\obj\Debug\PracticaKornilovaMarushkina_Content.g.cs
+C:\Users\212112\source\repos\PracticaKornilovaMarushkina\PracticaKornilovaMarushkina\bin\Debug\EntityFramework.dll
+C:\Users\212112\source\repos\PracticaKornilovaMarushkina\PracticaKornilovaMarushkina\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\212112\source\repos\PracticaKornilovaMarushkina\PracticaKornilovaMarushkina\bin\Debug\EntityFramework.xml
+C:\Users\212112\source\repos\PracticaKornilovaMarushkina\PracticaKornilovaMarushkina\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\212112\source\repos\PracticaKornilovaMarushkina\PracticaKornilovaMarushkina\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\212112\source\repos\PracticaKornilovaMarushkina\PracticaKornilovaMarushkina\obj\Debug\PracticaKornilovaMarushkina.csproj.CopyComplete

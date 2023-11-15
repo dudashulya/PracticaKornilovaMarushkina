@@ -16,7 +16,7 @@ namespace PracticaKornilovaMarushkina
         public static bool isHeadDepartment;
         public static bool isEngineer;
         public static bool isTeacher;
-        public static Ych_PR_KMEntities db = new Ych_PR_KMEntities();
+      
 
 
     }
