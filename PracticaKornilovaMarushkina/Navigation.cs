@@ -22,6 +22,7 @@ namespace PracticaKornilovaMarushkina.Components
             App.isHeadDepartment = false;
             components.Clear();
         }
+
         private static void Update(PageComponents pageComponents)//содержит всю логику добавляем в нее пейдж и вызываем апдате
         {
           //mainWindow.TitleTB.Text = pageComponents.Title; //запиши татле
