@@ -13,8 +13,11 @@ namespace PracticaKornilovaMarushkina
     /// </summary>
     public partial class App : Application
     {
-        public static bool isHeadDepartment = false;
-        public static bool isEngineer = false;
-        public static bool isTeacher = false;
+        public static bool isHeadDepartment;
+        public static bool isEngineer;
+        public static bool isTeacher;
+        public static Ych_PR_KMEntities db = new Ych_PR_KMEntities();
+
+
     }
 }

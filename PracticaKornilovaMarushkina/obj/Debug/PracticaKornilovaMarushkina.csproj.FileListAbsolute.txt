@@ -19,3 +19,4 @@ C:\Users\212112\source\repos\PracticaKornilovaMarushkina\PracticaKornilovaMarush
 C:\Users\212112\source\repos\PracticaKornilovaMarushkina\PracticaKornilovaMarushkina\obj\Debug\Pages\AuthorizationPage.baml
 C:\Users\212112\source\repos\PracticaKornilovaMarushkina\PracticaKornilovaMarushkina\obj\Debug\Pages\DisciplinesPage.g.cs
 C:\Users\212112\source\repos\PracticaKornilovaMarushkina\PracticaKornilovaMarushkina\obj\Debug\Pages\DisciplinesPage.baml
+C:\Users\212112\source\repos\PracticaKornilovaMarushkina\PracticaKornilovaMarushkina\obj\Debug\PracticaKornilovaMarushkina_Content.g.cs
