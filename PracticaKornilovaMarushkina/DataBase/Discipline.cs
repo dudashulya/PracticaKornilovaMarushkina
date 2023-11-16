@@ -19,6 +19,7 @@ namespace PracticaKornilovaMarushkina.DataBase
         {
             this.Application = new HashSet<Application>();
             this.Exame = new HashSet<Exame>();
+            this.StudentDiscipline = new HashSet<StudentDiscipline>();
         }
     
         public int Id_Discipline { get; set; }
@@ -31,5 +32,7 @@ namespace PracticaKornilovaMarushkina.DataBase
         public virtual Departament Departament { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Exame> Exame { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<StudentDiscipline> StudentDiscipline { get; set; }
     }
 }

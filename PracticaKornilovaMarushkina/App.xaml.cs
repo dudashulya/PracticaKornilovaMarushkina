@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PracticaKornilovaMarushkina.DataBase;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
@@ -11,12 +12,12 @@ namespace PracticaKornilovaMarushkina
     /// <summary>
     /// Логика взаимодействия для App.xaml
     /// </summary>
-    public partial class App : Application
+    public partial class App : System.Windows.Application
     {
         public static bool isHeadDepartment;
         public static bool isEngineer;
         public static bool isTeacher;
-      
+        
 
 
     }

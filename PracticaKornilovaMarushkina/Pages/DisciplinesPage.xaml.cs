@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PracticaKornilovaMarushkina.DataBase;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,26 +19,41 @@ namespace PracticaKornilovaMarushkina.Pages
     /// <summary>
     /// Логика взаимодействия для DisciplinesPage.xaml
     /// </summary>
+
+
+    public class InfoUser
+    {
+       public static int IdStudent
+        {
+            get;
+            set;
+        }
+    }
     public partial class DisciplinesPage : Page
     {
+        Student student;
         public DisciplinesPage()
         {
             InitializeComponent();
+            BList.ItemsSource = BDConnection.connection.StudentDiscipline.Where(x => x.Id_Student == InfoUser.IdStudent).ToList();
+            DataContext = this;
         }
 
         private void SerchTb_TextChanged(object sender, TextChangedEventArgs e)
         {
+            Refresh();
+        }
+        private void Refresh()
+        {
+            IEnumerable<Discipline> DisciplineSortList = BDConnection.connection.Discipline;
+            if (SerchTb.Text != null)
+            {
+                DisciplineSortList = DisciplineSortList.Where(x => x.Name_Discipline.ToLower().Contains(SerchTb.Text.ToLower()) || x.Name_Discipline.ToLower().Contains(SerchTb.Text.ToLower())); //поиск по слову
+            }
+
+            CountDataTb.Text = DisciplineSortList.Count() + "из" + BDConnection.connection.Discipline.Count();// выводить сколько данных показывается из всех
+
 
         }
-        //private void Refresh()
-        //    IEnumerable<Service> serviceSortList = App.db.Service;
-        //{ 
-        //    if(SerchTb.Text != null)
-        //    {
-        //        serviceSortList = serviceSortList.Where(x => x.Title.ToLower().Contains(SerchTb.Text.ToLower()) || x.Description.ToLower().Contains(SerchTb.Text.ToLower())); //поиск по слову
-        //    }
-
-        //}
-
     }
 }

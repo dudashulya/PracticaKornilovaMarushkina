@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="Хранилище Ych_PR_KMModelContainer" CdmEntityContainer="Ych_PR_KMEntities1">
+  <EntityContainerMapping StorageEntityContainer="Хранилище Ych_PR_KMModelContainer" CdmEntityContainer="Ych_PR_KM321">
     <EntitySetMapping Name="Academics">
       <EntityTypeMapping TypeName="Ych_PR_KMModel.Academics">
         <MappingFragment StoreEntitySet="Academics">
@@ -210,6 +210,15 @@
           <ScalarProperty Name="Id_Student" ColumnName="Id_Student" />
           <ScalarProperty Name="Id_Speciality" ColumnName="Id_Speciality" />
           <ScalarProperty Name="LastName_Student" ColumnName="LastName_Student" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StudentDiscipline">
+      <EntityTypeMapping TypeName="Ych_PR_KMModel.StudentDiscipline">
+        <MappingFragment StoreEntitySet="StudentDiscipline">
+          <ScalarProperty Name="Id_SD" ColumnName="Id_SD" />
+          <ScalarProperty Name="Id_Discipline" ColumnName="Id_Discipline" />
+          <ScalarProperty Name="Id_Student" ColumnName="Id_Student" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

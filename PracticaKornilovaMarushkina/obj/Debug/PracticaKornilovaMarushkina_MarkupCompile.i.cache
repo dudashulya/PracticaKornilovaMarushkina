@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\212112\source\repos\PracticaKornilovaMarushkina\PracticaKornilovaMarushkina\obj\Debug\
+C:\Users\212112\Source\Repos\PracticaKornilovaMarushkina\PracticaKornilovaMarushkina\obj\Debug\
 PracticaKornilovaMarushkina
 none
 false
 DEBUG;TRACE
-C:\Users\212112\source\repos\PracticaKornilovaMarushkina\PracticaKornilovaMarushkina\App.xaml
-31681033711
+C:\Users\212112\Source\Repos\PracticaKornilovaMarushkina\PracticaKornilovaMarushkina\App.xaml
+41018529902
 2-1670966889
-39-1145524290
-1990242466
-MainWindow.xaml;Pages\AuthorizationPage.xaml;Pages\DisciplinesPage.xaml;
+41709716857
+19616438818
+MainWindow.xaml;Pages\AuthorizationPage.xaml;Pages\DisciplinesPage.xaml;Pages\EmployeePage.xaml;
 
-False
+True
 

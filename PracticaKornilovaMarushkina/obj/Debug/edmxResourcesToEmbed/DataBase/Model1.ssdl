@@ -189,6 +189,14 @@
     <Property Name="Id_Speciality" Type="nchar" MaxLength="10" />
     <Property Name="LastName_Student" Type="nvarchar" MaxLength="50" />
   </EntityType>
+  <EntityType Name="StudentDiscipline">
+    <Key>
+      <PropertyRef Name="Id_SD" />
+    </Key>
+    <Property Name="Id_SD" Type="int" Nullable="false" />
+    <Property Name="Id_Discipline" Type="int" />
+    <Property Name="Id_Student" Type="int" />
+  </EntityType>
   <EntityType Name="sysdiagrams">
     <Key>
       <PropertyRef Name="diagram_id" />
@@ -451,6 +459,30 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="FK_StudentDiscipline_Discipline">
+    <End Role="Discipline" Type="Self.Discipline" Multiplicity="0..1" />
+    <End Role="StudentDiscipline" Type="Self.StudentDiscipline" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Discipline">
+        <PropertyRef Name="Id_Discipline" />
+      </Principal>
+      <Dependent Role="StudentDiscipline">
+        <PropertyRef Name="Id_Discipline" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_StudentDiscipline_Student">
+    <End Role="Student" Type="Self.Student" Multiplicity="0..1" />
+    <End Role="StudentDiscipline" Type="Self.StudentDiscipline" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Student">
+        <PropertyRef Name="Id_Student" />
+      </Principal>
+      <Dependent Role="StudentDiscipline">
+        <PropertyRef Name="Id_Student" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <EntityContainer Name="Хранилище Ych_PR_KMModelContainer">
     <EntitySet Name="Academics" EntityType="Self.Academics" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Animal_Kornilova_Marushkina" EntityType="Self.Animal_Kornilova_Marushkina" Schema="dbo" store:Type="Tables" />
@@ -475,6 +507,7 @@
     <EntitySet Name="Speciality" EntityType="Self.Speciality" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Specialization" EntityType="Self.Specialization" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Student" EntityType="Self.Student" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="StudentDiscipline" EntityType="Self.StudentDiscipline" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Type_Control" EntityType="Self.Type_Control" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Гимназисты" EntityType="Self.Гимназисты" store:Type="Tables" store:Schema="dbo">
@@ -557,6 +590,14 @@
     <AssociationSet Name="FK_Student_Speciality" Association="Self.FK_Student_Speciality">
       <End Role="Speciality" EntitySet="Speciality" />
       <End Role="Student" EntitySet="Student" />
+    </AssociationSet>
+    <AssociationSet Name="FK_StudentDiscipline_Discipline" Association="Self.FK_StudentDiscipline_Discipline">
+      <End Role="Discipline" EntitySet="Discipline" />
+      <End Role="StudentDiscipline" EntitySet="StudentDiscipline" />
+    </AssociationSet>
+    <AssociationSet Name="FK_StudentDiscipline_Student" Association="Self.FK_StudentDiscipline_Student">
+      <End Role="Student" EntitySet="Student" />
+      <End Role="StudentDiscipline" EntitySet="StudentDiscipline" />
     </AssociationSet>
   </EntityContainer>
 </Schema>

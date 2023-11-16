@@ -18,9 +18,20 @@
             <TextBlock>Поиск дисциплин по наименованию и описанию</TextBlock>
             <TextBox Name="SerchTb" TextChanged="SerchTb_TextChanged"></TextBox>
         </StackPanel>
-        <ScrollViewer HorizontalScrollBarVisibility="Disabled" Grid.Row="1">
-            <WrapPanel  x:Name="ServicesWp"/>
-        </ScrollViewer>
+        
+        <ListView Margin="10 10 10 10" x:Name="BList" Grid.Row="1" >
+            <ListView.View>
+                <GridView>
+                    <GridView.Columns>
+                    
+                        <GridViewColumn Width="150px" Header="Дисциплина" DisplayMemberBinding="{Binding Discipline.Name_Discipline}"></GridViewColumn>
+                        <GridViewColumn x:Name="priceCloun" Width="150px" Header="Часы" DisplayMemberBinding="{Binding Discipline.Volume}"></GridViewColumn>
+                       
+
+                    </GridView.Columns>
+                </GridView>
+            </ListView.View>
+        </ListView>
 
         <StackPanel Grid.Row="2" HorizontalAlignment="Center" Orientation="Horizontal" Width="800" >
             <!--<Button Width="100" Height="35"  x:Name="AddBtn" Click="AddBtn_Click">Добавить</Button>

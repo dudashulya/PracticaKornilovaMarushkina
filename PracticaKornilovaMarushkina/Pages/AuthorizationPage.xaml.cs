@@ -1,4 +1,5 @@
 ﻿using PracticaKornilovaMarushkina.Components;
+using PracticaKornilovaMarushkina.DataBase;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -28,27 +29,39 @@ namespace PracticaKornilovaMarushkina.Pages
 
         private void EnterBTN_Click(object sender, RoutedEventArgs e)
         {
-            
-                if (PasswordPB.Password == "0000")
+            var User = BDConnection.connection.Employee.Where(x => x.Id_Number.ToString() == PasswordPB.Password).FirstOrDefault() as Employee;
+                if (BDConnection.connection.Boss.Where(x => x.Id_Boss.ToString() == PasswordPB.Password).FirstOrDefault() != null)
                 {
                     App.isHeadDepartment = true;
                     MessageBox.Show("Здравствуй Заведующий Кафедры");
+                    Navigation.NextPage(new PageComponents("Список услуг", new DisciplinesPage()));
                 }
-                if (PasswordPB.Password == "1111")
+                else if (BDConnection.connection.Engineer.Where(x => x.Id_Engineer.ToString() == PasswordPB.Password).FirstOrDefault() != null)
                 {
                      App.isEngineer = true;
                      MessageBox.Show("Здравствуй Инженер");
                 }
-                if (PasswordPB.Password == "2222")
+           else if (BDConnection.connection.Employee.Where(x => x.Id_Number.ToString() == PasswordPB.Password && x.Id_Rank.ToString() != null).FirstOrDefault() != null)
+            {
+                App.isTeacher = true;
+                MessageBox.Show("Здравствуй Преподаватель");
+
+            }
+            else if (BDConnection.connection.Student.Where(x => x.Id_Student.ToString() == PasswordPB.Password ).FirstOrDefault() != null)
                 {
-                     App.isTeacher = true;
-                     MessageBox.Show("Здравствуй Преподаватель");
+                InfoUser.IdStudent =Convert.ToInt32( PasswordPB.Password);
+                    MessageBox.Show("Здравствуй студент");
+                    Navigation.NextPage(new PageComponents("Список услуг", new DisciplinesPage()));
                 }
-                else if(PasswordPB.Password == "")
-                {
-                    MessageBox.Show("Здравствуй гость");
-                }
-              Navigation.NextPage(new PageComponents("Список услуг", new DisciplinesPage()));
+
+            else
+            {  
+                
+               MessageBox.Show("Неверный пароль. Попробуйте заново");
+                
+
+            }
+              
 
             
 

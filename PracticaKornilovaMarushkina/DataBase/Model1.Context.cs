@@ -13,10 +13,10 @@ namespace PracticaKornilovaMarushkina.DataBase
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class Ych_PR_KMEntities1 : DbContext
+    public partial class Ych_PR_KM321 : DbContext
     {
-        public Ych_PR_KMEntities1()
-            : base("name=Ych_PR_KMEntities1")
+        public Ych_PR_KM321()
+            : base("name=Ych_PR_KM321")
         {
         }
     
@@ -48,6 +48,7 @@ namespace PracticaKornilovaMarushkina.DataBase
         public virtual DbSet<Speciality> Speciality { get; set; }
         public virtual DbSet<Specialization> Specialization { get; set; }
         public virtual DbSet<Student> Student { get; set; }
+        public virtual DbSet<StudentDiscipline> StudentDiscipline { get; set; }
         public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
         public virtual DbSet<Type_Control> Type_Control { get; set; }
         public virtual DbSet<Гимназисты> Гимназисты { get; set; }

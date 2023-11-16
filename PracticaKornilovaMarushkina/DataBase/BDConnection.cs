@@ -8,6 +8,6 @@ namespace PracticaKornilovaMarushkina.DataBase
 {
     public static class BDConnection
     {
-        public static Ych_PR_KMEntities1 connection = new Ych_PR_KMEntities1();
+        public static Ych_PR_KM321 connection = new Ych_PR_KM321();
     }
 }
