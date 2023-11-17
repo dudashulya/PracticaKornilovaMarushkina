@@ -27,3 +27,4 @@ C:\Users\212112\source\repos\PracticaKornilovaMarushkina\PracticaKornilovaMarush
 C:\Users\212112\source\repos\PracticaKornilovaMarushkina\PracticaKornilovaMarushkina\obj\Debug\PracticaKornilovaMarushkina.csproj.CopyComplete
 C:\Users\212112\Source\Repos\PracticaKornilovaMarushkina\PracticaKornilovaMarushkina\obj\Debug\Pages\EmployeePage.g.cs
 C:\Users\212112\Source\Repos\PracticaKornilovaMarushkina\PracticaKornilovaMarushkina\obj\Debug\Pages\EmployeePage.baml
+C:\Users\212112\Source\Repos\PracticaKornilovaMarushkina\PracticaKornilovaMarushkina\obj\Debug\PracticaKornilovaMarushkina.csproj.SuggestedBindingRedirects.cache

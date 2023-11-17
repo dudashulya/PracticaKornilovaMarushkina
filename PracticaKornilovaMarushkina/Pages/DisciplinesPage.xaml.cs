@@ -28,6 +28,11 @@ namespace PracticaKornilovaMarushkina.Pages
             get;
             set;
         }
+        public static int IDEmploy 
+        {
+            get;
+            set;
+        }
     }
     public partial class DisciplinesPage : Page
     {
@@ -36,24 +41,12 @@ namespace PracticaKornilovaMarushkina.Pages
         {
             InitializeComponent();
             BList.ItemsSource = BDConnection.connection.StudentDiscipline.Where(x => x.Id_Student == InfoUser.IdStudent).ToList();
+            last.Text = BDConnection.connection.Student.Where(x => x.Id_Student == InfoUser.IdStudent).FirstOrDefault().LastName_Student;
+                //Convert.ToString(InfoUser.IdStudent);
             DataContext = this;
-        }
-
-        private void SerchTb_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            Refresh();
-        }
-        private void Refresh()
-        {
-            IEnumerable<Discipline> DisciplineSortList = BDConnection.connection.Discipline;
-            if (SerchTb.Text != null)
-            {
-                DisciplineSortList = DisciplineSortList.Where(x => x.Name_Discipline.ToLower().Contains(SerchTb.Text.ToLower()) || x.Name_Discipline.ToLower().Contains(SerchTb.Text.ToLower())); //поиск по слову
-            }
-
-            CountDataTb.Text = DisciplineSortList.Count() + "из" + BDConnection.connection.Discipline.Count();// выводить сколько данных показывается из всех
-
 
         }
+
+       
     }
 }

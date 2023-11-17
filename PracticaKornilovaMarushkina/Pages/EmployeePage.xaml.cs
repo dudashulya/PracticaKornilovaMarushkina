@@ -1,4 +1,6 @@
-﻿using System;
+﻿using PracticaKornilovaMarushkina.DataBase;
+using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +22,31 @@ namespace PracticaKornilovaMarushkina.Pages
     /// </summary>
     public partial class EmployeePage : Page
     {
-        public EmployeePage()
+        
+        public EmployeePage( )
         {
             InitializeComponent();
+            EList.ItemsSource = BDConnection.connection.Employee.ToList();
+            
+           
+        }
+        private void SerchTb_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            Refresh();
+        }
+        private void Refresh()
+        {
+            IEnumerable<Employee> EmployeeeSortList = BDConnection.connection.Employee;
+            if (SerchTb.Text != null)
+            {
+                EmployeeeSortList = EmployeeeSortList.Where(x => x.LastName.ToLower().Contains(SerchTb.Text.ToLower()) || x.LastName.ToLower().Contains(SerchTb.Text.ToLower())); //поиск по слову
+                   EList.ItemsSource = EmployeeeSortList;   
+            }
+
+            CountDataTb.Text = EmployeeeSortList.Count() + "из" + BDConnection.connection.Employee.Count();// выводить сколько данных показывается из всех
+           
+           
+
         }
     }
 }

@@ -34,12 +34,14 @@ namespace PracticaKornilovaMarushkina.Pages
                 {
                     App.isHeadDepartment = true;
                     MessageBox.Show("Здравствуй Заведующий Кафедры");
-                    Navigation.NextPage(new PageComponents("Список услуг", new DisciplinesPage()));
+                    
                 }
                 else if (BDConnection.connection.Engineer.Where(x => x.Id_Engineer.ToString() == PasswordPB.Password).FirstOrDefault() != null)
                 {
                      App.isEngineer = true;
+                InfoUser.IDEmploy = Convert.ToInt32(PasswordPB.Password);
                      MessageBox.Show("Здравствуй Инженер");
+                     Navigation.NextPage(new PageComponents("Список услуг", new EmployeePage()));
                 }
            else if (BDConnection.connection.Employee.Where(x => x.Id_Number.ToString() == PasswordPB.Password && x.Id_Rank.ToString() != null).FirstOrDefault() != null)
             {

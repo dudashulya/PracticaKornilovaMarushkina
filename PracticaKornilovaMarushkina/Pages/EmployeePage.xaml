@@ -16,18 +16,21 @@
         </Grid.RowDefinitions>
         <StackPanel Orientation="Horizontal">
             <TextBlock>По наименованию и описанию</TextBlock>
-            <TextBox Name="SerchTb" ></TextBox>
+            <TextBox Name="SerchTb" TextChanged="SerchTb_TextChanged"  ></TextBox>
         </StackPanel>
         <ListView Margin="10 10 10 10" x:Name="EList" Grid.Row="1" >
             <ListView.View>
                 <GridView>
                     <GridView.Columns>
+                        <GridViewColumn Width="50px" Header="ID" DisplayMemberBinding="{Binding Id_Number}"></GridViewColumn>
 
-                        <GridViewColumn Width="150px" Header="Cотрудник" DisplayMemberBinding="{Binding Employee.LastName}"></GridViewColumn>
-                        <GridViewColumn x:Name="priceCloun" Width="150px" Header="Позиция" DisplayMemberBinding="{Binding Pozition.Name_Pozition}"></GridViewColumn>
-                        <GridViewColumn Width="150px" Header="Зарплата" DisplayMemberBinding="{Binding Pozition.Salary}"></GridViewColumn>
-                        <GridViewColumn x:Name="priceClou" Width="150px" Header="ранг" DisplayMemberBinding="{Binding Discipline.Volume}"></GridViewColumn>
-
+                        <GridViewColumn Width="100px" Header="Cотрудник" x:Name="LastName" DisplayMemberBinding="{Binding LastName}"></GridViewColumn>
+                        <GridViewColumn  Width="120px" Header="Позиция" DisplayMemberBinding="{Binding Pozition.Name_Pozition}"></GridViewColumn>
+                        <GridViewColumn Width="100px" x:Name="Salary" Header="Зарплата" DisplayMemberBinding="{Binding Pozition.Salary}"></GridViewColumn>
+                        <GridViewColumn x:Name="Rang" Width="100px" Header="стаж" DisplayMemberBinding="{Binding Boss.Rang}"></GridViewColumn>
+                       <GridViewColumn x:Name="Rank" Width="150px" Header="ранг" DisplayMemberBinding="{Binding Rank.Name_Rank}"></GridViewColumn>
+                         <GridViewColumn x:Name="Degree" Width="150px" Header="степень" DisplayMemberBinding="{Binding Degree.Name_Degree}"></GridViewColumn>
+                         
                     </GridView.Columns>
                 </GridView>
             </ListView.View>

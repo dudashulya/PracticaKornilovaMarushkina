@@ -14,9 +14,8 @@
             <RowDefinition Height="61*"/>
             <RowDefinition Height="15*"/>
         </Grid.RowDefinitions>
-        <StackPanel Orientation="Horizontal">
-            <TextBlock>Поиск дисциплин по наименованию и описанию</TextBlock>
-            <TextBox Name="SerchTb" TextChanged="SerchTb_TextChanged"></TextBox>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <TextBlock x:Name="last" ></TextBlock>
         </StackPanel>
         
         <ListView Margin="10 10 10 10" x:Name="BList" Grid.Row="1" >
