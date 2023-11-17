@@ -33,6 +33,16 @@ namespace PracticaKornilovaMarushkina.Pages
             get;
             set;
         }
+        public static int IDBoss
+        {
+            get;
+            set;
+        }
+        public static int IDTeacher
+        {
+            get;
+            set;
+        }
     }
     public partial class DisciplinesPage : Page
     {

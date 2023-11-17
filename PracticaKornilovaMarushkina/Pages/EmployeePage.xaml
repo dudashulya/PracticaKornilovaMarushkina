@@ -39,7 +39,7 @@
         <StackPanel Grid.Row="2" HorizontalAlignment="Center" Orientation="Horizontal" Width="800" >
             <Button Width="100" Height="35"  x:Name="AddBtn" >Добавить</Button>
             <Button  x:Name="DeleteBtn" Height="35" Width="150" > Удалить </Button>
-            <Button  x:Name="ChangeBtn" Height="35" Width="150" > Редактировать </Button>
+            <Button  x:Name="ChangeBtn" Height="35" Width="150" Click="ChangeBtn_Click" > Редактировать </Button>
             <TextBlock Margin="30 0" x:Name="CountDataTb"></TextBlock>
         </StackPanel>
     </Grid>

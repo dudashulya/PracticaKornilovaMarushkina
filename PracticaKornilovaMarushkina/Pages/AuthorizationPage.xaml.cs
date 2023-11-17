@@ -34,8 +34,9 @@ namespace PracticaKornilovaMarushkina.Pages
                 {
                     App.isHeadDepartment = true;
                     MessageBox.Show("Здравствуй Заведующий Кафедры");
-                    
-                }
+                    InfoUser.IDBoss= Convert.ToInt32(PasswordPB.Password);
+                    Navigation.NextPage(new PageComponents("Список услуг", new SelectionPage()));
+            }
                 else if (BDConnection.connection.Engineer.Where(x => x.Id_Engineer.ToString() == PasswordPB.Password).FirstOrDefault() != null)
                 {
                      App.isEngineer = true;
@@ -44,9 +45,10 @@ namespace PracticaKornilovaMarushkina.Pages
                      Navigation.NextPage(new PageComponents("Список услуг", new EmployeePage()));
                 }
            else if (BDConnection.connection.Employee.Where(x => x.Id_Number.ToString() == PasswordPB.Password && x.Id_Rank.ToString() != null).FirstOrDefault() != null)
-            {
+            {   InfoUser.IDTeacher = Convert.ToInt32(PasswordPB.Password);
                 App.isTeacher = true;
-                MessageBox.Show("Здравствуй Преподаватель");
+                MessageBox.Show("Здравствуй Преподаватель"); 
+                Navigation.NextPage(new PageComponents("Список услуг", new EmployeePage()));
 
             }
             else if (BDConnection.connection.Student.Where(x => x.Id_Student.ToString() == PasswordPB.Password ).FirstOrDefault() != null)

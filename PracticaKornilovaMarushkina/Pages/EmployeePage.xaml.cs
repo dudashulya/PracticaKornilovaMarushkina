@@ -1,4 +1,5 @@
-﻿using PracticaKornilovaMarushkina.DataBase;
+﻿using PracticaKornilovaMarushkina.Components;
+using PracticaKornilovaMarushkina.DataBase;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -41,12 +42,17 @@ namespace PracticaKornilovaMarushkina.Pages
             {
                 EmployeeeSortList = EmployeeeSortList.Where(x => x.LastName.ToLower().Contains(SerchTb.Text.ToLower()) || x.LastName.ToLower().Contains(SerchTb.Text.ToLower())); //поиск по слову
                    EList.ItemsSource = EmployeeeSortList;   
-            }
+            } 
 
             CountDataTb.Text = EmployeeeSortList.Count() + "из" + BDConnection.connection.Employee.Count();// выводить сколько данных показывается из всех
            
            
 
+        }
+
+        private void ChangeBtn_Click(object sender, RoutedEventArgs e)
+        {
+            //    Navigation.NextPage(new PageComponents("Редактирование", new AddEditservicePage(service)));
         }
     }
 }
