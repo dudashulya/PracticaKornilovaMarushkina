@@ -1,7 +1,6 @@
 C:\Users\212112\source\repos\PracticaKornilovaMarushkina\PracticaKornilovaMarushkina\bin\Debug\PracticaKornilovaMarushkina.exe.config
 C:\Users\212112\source\repos\PracticaKornilovaMarushkina\PracticaKornilovaMarushkina\bin\Debug\PracticaKornilovaMarushkina.exe
 C:\Users\212112\source\repos\PracticaKornilovaMarushkina\PracticaKornilovaMarushkina\bin\Debug\PracticaKornilovaMarushkina.pdb
-C:\Users\212112\source\repos\PracticaKornilovaMarushkina\PracticaKornilovaMarushkina\obj\Debug\PracticaKornilovaMarushkina.csproj.AssemblyReference.cache
 C:\Users\212112\source\repos\PracticaKornilovaMarushkina\PracticaKornilovaMarushkina\obj\Debug\MainWindow.g.cs
 C:\Users\212112\source\repos\PracticaKornilovaMarushkina\PracticaKornilovaMarushkina\obj\Debug\App.g.cs
 C:\Users\212112\source\repos\PracticaKornilovaMarushkina\PracticaKornilovaMarushkina\obj\Debug\PracticaKornilovaMarushkina_MarkupCompile.cache
@@ -27,6 +26,8 @@ C:\Users\212112\source\repos\PracticaKornilovaMarushkina\PracticaKornilovaMarush
 C:\Users\212112\source\repos\PracticaKornilovaMarushkina\PracticaKornilovaMarushkina\obj\Debug\PracticaKornilovaMarushkina.csproj.CopyComplete
 C:\Users\212112\Source\Repos\PracticaKornilovaMarushkina\PracticaKornilovaMarushkina\obj\Debug\Pages\EmployeePage.g.cs
 C:\Users\212112\Source\Repos\PracticaKornilovaMarushkina\PracticaKornilovaMarushkina\obj\Debug\Pages\EmployeePage.baml
-C:\Users\212112\Source\Repos\PracticaKornilovaMarushkina\PracticaKornilovaMarushkina\obj\Debug\PracticaKornilovaMarushkina.csproj.SuggestedBindingRedirects.cache
 C:\Users\212112\Source\Repos\PracticaKornilovaMarushkina\PracticaKornilovaMarushkina\obj\Debug\Pages\SelectionPage.g.cs
 C:\Users\212112\Source\Repos\PracticaKornilovaMarushkina\PracticaKornilovaMarushkina\obj\Debug\Pages\SelectionPage.baml
+C:\Users\212112\Source\Repos\PracticaKornilovaMarushkina\PracticaKornilovaMarushkina\obj\Debug\PracticaKornilovaMarushkina.csprojAssemblyReference.cache
+C:\Users\212112\Source\Repos\PracticaKornilovaMarushkina\PracticaKornilovaMarushkina\obj\Debug\Pages\EditPage.g.cs
+C:\Users\212112\Source\Repos\PracticaKornilovaMarushkina\PracticaKornilovaMarushkina\obj\Debug\Pages\EditPage.baml

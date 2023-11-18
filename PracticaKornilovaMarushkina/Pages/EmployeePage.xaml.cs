@@ -1,4 +1,4 @@
-﻿using PracticaKornilovaMarushkina.Components;
+﻿
 using PracticaKornilovaMarushkina.DataBase;
 using System;
 using System.Collections;
@@ -52,7 +52,20 @@ namespace PracticaKornilovaMarushkina.Pages
 
         private void ChangeBtn_Click(object sender, RoutedEventArgs e)
         {
-            //    Navigation.NextPage(new PageComponents("Редактирование", new AddEditservicePage(service)));
+            Employee employee = EList.SelectedItem as Employee;
+            Navigation.NextPage(new PageComponents("Редактирование", new EditPage(employee)));
+        }
+
+        private void DeleteBtn_Click(object sender, RoutedEventArgs e)
+        { 
+           Employee employee = EList.SelectedItem as Employee;
+            BDConnection.connection.Employee.Remove(employee);
+            EList.ItemsSource = BDConnection.connection.Employee.ToList();
+        }
+
+        private void AddBtn_Click(object sender, RoutedEventArgs e)
+        {
+            Navigation.NextPage(new PageComponents("Редактирование", new EditPage(new Employee())));
         }
     }
 }
