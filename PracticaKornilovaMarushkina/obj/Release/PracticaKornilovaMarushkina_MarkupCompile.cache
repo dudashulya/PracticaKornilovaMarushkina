@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\212112\source\repos\PracticaKornilovaMarushkina\PracticaKornilovaMarushkina\obj\Release\
+C:\Users\212112\Source\Repos\PracticaKornilovaMarushkina\PracticaKornilovaMarushkina\obj\Release\
 PracticaKornilovaMarushkina
 none
 false
 TRACE
-C:\Users\212112\source\repos\PracticaKornilovaMarushkina\PracticaKornilovaMarushkina\App.xaml
-629620810
+C:\Users\212112\Source\Repos\PracticaKornilovaMarushkina\PracticaKornilovaMarushkina\App.xaml
+11-183895333
 2-290982251
-42-1229894899
-19-1579957887
-MainWindow.xaml;Pages\AuthorizationPage.xaml;Pages\DisciplinesPage.xaml;Pages\EditPage.xaml;Pages\EmployeePage.xaml;Pages\SelectionPage.xaml;
+47-762982999
+20735503289
+MainWindow.xaml;Pages\AuthorizationPage.xaml;Pages\DepartmentPage.xaml;Pages\DisciplinesPage.xaml;Pages\EditPage.xaml;Pages\EmployeePage.xaml;Pages\PageDis.xaml;Pages\PageZAV.xaml;Pages\QRPage.xaml;Pages\RedPage.xaml;Pages\SelectionPage.xaml;
 
 True
 

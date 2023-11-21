@@ -22,10 +22,8 @@
             <ListView.View>
                 <GridView>
                     <GridView.Columns>
-                    
                         <GridViewColumn Width="150px" Header="Дисциплина" DisplayMemberBinding="{Binding Discipline.Name_Discipline}"></GridViewColumn>
                         <GridViewColumn x:Name="priceCloun" Width="150px" Header="Часы" DisplayMemberBinding="{Binding Discipline.Volume}"></GridViewColumn>
-                       
 
                     </GridView.Columns>
                 </GridView>

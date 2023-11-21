@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\212112\Source\Repos\PracticaKornilovaMarushkina\PracticaKornilovaMarushkina\App.xaml
-7430932255
+11-183895333
 2-290982251
-44-1517660703
-19658600802
-MainWindow.xaml;Pages\AuthorizationPage.xaml;Pages\DisciplinesPage.xaml;Pages\EditPage.xaml;Pages\EmployeePage.xaml;Pages\ExemPage.xaml;Pages\SelectionPage.xaml;
+48-440811749
+20735503289
+MainWindow.xaml;Pages\AuthorizationPage.xaml;Pages\DepartmentPage.xaml;Pages\DisciplinesPage.xaml;Pages\EditPage.xaml;Pages\EmployeePage.xaml;Pages\PageDis.xaml;Pages\PageZAV.xaml;Pages\QRPage.xaml;Pages\RedPage.xaml;Pages\SelectionPage.xaml;
 
 True
 

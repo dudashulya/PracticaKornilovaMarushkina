@@ -41,7 +41,7 @@ namespace PracticaKornilovaMarushkina.Pages
         public static int IDTeacher
         {
             get;
-            set;
+            set; 
         }
     }
     public partial class DisciplinesPage : Page

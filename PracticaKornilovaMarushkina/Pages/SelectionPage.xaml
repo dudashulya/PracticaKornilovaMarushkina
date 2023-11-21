@@ -9,8 +9,11 @@
       Title="SelectionPage">
 
     <Grid>
-        <Button Height="25" Width="100" HorizontalAlignment="Left" Margin="225,212,0,212">Кафедры</Button>
-        <Button Height="25" Width="100" Margin="478,212,222,212">Дисциплины</Button>
-        
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button Height="25" Width="100" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Кафедры" x:Name="DepartB" Click="DepartB_Click"/>
+            <Button Height="25" Width="100" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Дисциплины" x:Name="DisciplineB" Click="DisciplineB_Click"/>
+        </StackPanel>
+
+
     </Grid>
 </Page>

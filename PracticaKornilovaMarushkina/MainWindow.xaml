@@ -14,6 +14,8 @@
         </Grid.RowDefinitions>
         <Image x:Name="MainLogo" Height="50"  Width="50"  Source="/Resources/pngwing.com.png" />
         <Button Grid.Row="0" Width="50" Height="30" HorizontalAlignment="Right" Margin="25" x:Name="BackBtn" Click="BackBtn_Click" >Назад</Button>
+        <Button Grid.Row="0" Width="50" Height="30"  HorizontalAlignment="Left" Click="Button_Click"> Жмяк</Button>
         <Frame  Grid.Row="1" x:Name="MainFrame" NavigationUIVisibility="Hidden"></Frame>
+        
     </Grid>
 </Window>

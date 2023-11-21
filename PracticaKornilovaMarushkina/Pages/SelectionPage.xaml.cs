@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using PracticaKornilovaMarushkina.DataBase;
+using PracticaKornilovaMarushkina;
 
 namespace PracticaKornilovaMarushkina.Pages
 {
@@ -23,6 +25,17 @@ namespace PracticaKornilovaMarushkina.Pages
         public SelectionPage()
         {
             InitializeComponent();
+        }
+
+        private void DepartB_Click(object sender, RoutedEventArgs e)
+        {
+            Navigation.NextPage(new PageComponents("Список услуг", new DepartmentPage()));
+        }
+
+        private void DisciplineB_Click(object sender, RoutedEventArgs e)
+        {
+           
+            Navigation.NextPage(new PageComponents("Список услуг", new PageZAV()));
         }
     }
 }

@@ -41,6 +41,9 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="QRCoder, Version=1.4.3.0, Culture=neutral, PublicKeyToken=c4ed5b9ae8358a28, processorArchitecture=MSIL">
+      <HintPath>..\packages\QRCoder.1.4.3\lib\net40\QRCoder.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data" />
@@ -178,6 +181,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\DepartmentPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\DisciplinesPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -187,6 +194,22 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\EmployeePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\PageDis.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\PageZAV.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\QRPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\RedPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -200,6 +223,9 @@
     <Compile Include="Pages\AuthorizationPage.xaml.cs">
       <DependentUpon>AuthorizationPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\DepartmentPage.xaml.cs">
+      <DependentUpon>DepartmentPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\DisciplinesPage.xaml.cs">
       <DependentUpon>DisciplinesPage.xaml</DependentUpon>
     </Compile>
@@ -208,6 +234,18 @@
     </Compile>
     <Compile Include="Pages\EmployeePage.xaml.cs">
       <DependentUpon>EmployeePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PageDis.xaml.cs">
+      <DependentUpon>PageDis.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PageZAV.xaml.cs">
+      <DependentUpon>PageZAV.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\QRPage.xaml.cs">
+      <DependentUpon>QRPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\RedPage.xaml.cs">
+      <DependentUpon>RedPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\SelectionPage.xaml.cs">
       <DependentUpon>SelectionPage.xaml</DependentUpon>

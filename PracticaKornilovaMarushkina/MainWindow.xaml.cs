@@ -34,5 +34,10 @@ namespace PracticaKornilovaMarushkina
         {
             Navigation.BackPage();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Navigation.NextPage(new PageComponents("Авторизация", new QRPage()));  
+        }
     }
 }
