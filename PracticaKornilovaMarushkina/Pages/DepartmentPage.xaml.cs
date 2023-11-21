@@ -14,6 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using PracticaKornilovaMarushkina;
+using System.ComponentModel;
 
 namespace PracticaKornilovaMarushkina.Pages
 {
@@ -29,6 +30,7 @@ namespace PracticaKornilovaMarushkina.Pages
           
             DList.ItemsSource = BDConnection.connection.Departament.ToList();
             DataContext = this;
+            Refresh();  
         }
 
         private void ChangeBtn_Click(object sender, RoutedEventArgs e)
@@ -50,6 +52,37 @@ namespace PracticaKornilovaMarushkina.Pages
         private void AddBtn_Click(object sender, RoutedEventArgs e)
         {
             Navigation.NextPage(new PageComponents("Редактирование", new RedPage(new Departament())));
+        }
+
+        private void Filtercb_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            Refresh();
+        }
+        private void Refresh()
+        {
+            IEnumerable<Departament>  serviceSortList = BDConnection.connection.Departament;
+            if (Filtercb.SelectedIndex != 0)
+            {
+                if (Filtercb.SelectedIndex == 1)
+                {
+                    serviceSortList = serviceSortList.OrderBy(x => x.Name_Departament);
+                }
+                else if (Filtercb.SelectedIndex == 2)
+                {
+                    serviceSortList = serviceSortList.OrderByDescending(x => x.Name_Departament); 
+                }
+               
+            }
+            if (SerchTb.Text != null)
+            {
+                serviceSortList = serviceSortList.Where(x => x.Name_Departament.ToLower().Contains(SerchTb.Text.ToLower()) || x.Name_Departament.ToLower().Contains(SerchTb.Text.ToLower())); //поиск по слову
+            }
+            DList.ItemsSource = serviceSortList.ToList();
+        }
+
+        private void SerchTb_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            Refresh();
         }
     }
 }

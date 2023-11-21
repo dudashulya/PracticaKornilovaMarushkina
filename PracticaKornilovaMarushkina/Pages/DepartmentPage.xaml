@@ -14,10 +14,15 @@
             <RowDefinition Height="61*"/>
             <RowDefinition Height="15*"/>
         </Grid.RowDefinitions>
-        <!--<StackPanel Orientation="Horizontal">
+        <StackPanel Orientation="Horizontal">
             <TextBlock>По наименованию и описанию</TextBlock>
             <TextBox Name="SerchTb" TextChanged="SerchTb_TextChanged"  ></TextBox>
-        </StackPanel>-->
+            <TextBlock>Фильтр</TextBlock>
+            <ComboBox x:Name="Filtercb" SelectionChanged="Filtercb_SelectionChanged">
+                <ComboBoxItem>от А до Я</ComboBoxItem>
+                <ComboBoxItem>от Я до А</ComboBoxItem>
+            </ComboBox>
+        </StackPanel>
         <ListView Margin="10 10 10 10" x:Name="DList" Grid.Row="1" >
             <ListView.View>
                 <GridView>
