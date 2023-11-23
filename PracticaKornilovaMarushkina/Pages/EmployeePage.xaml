@@ -8,7 +8,7 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="EmployeePage">
 
-    <Grid>
+    <Grid Background="#E1F5FE">
         <Grid.RowDefinitions>
             <RowDefinition Height="14*"/>
             <RowDefinition Height="61*"/>

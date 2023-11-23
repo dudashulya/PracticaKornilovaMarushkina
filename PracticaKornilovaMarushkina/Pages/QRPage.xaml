@@ -8,7 +8,7 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="QRPage">
 
-    <Grid>
+    <Grid Background="#E1F5FE">
         <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
             <Image x:Name="imageQr" Height="200" Width="200" ></Image>
         </StackPanel>

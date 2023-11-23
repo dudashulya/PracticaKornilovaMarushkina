@@ -8,11 +8,13 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="AuthorizationPage">
 
-    <Grid>
+    <Grid Background="#E1F5FE">
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
             <TextBlock> Необходимо ввести пароль</TextBlock>
             <PasswordBox x:Name="PasswordPB" ></PasswordBox>
             <Button x:Name="EnterBTN" Click="EnterBTN_Click">Войти</Button>
+            
         </StackPanel>
+        
     </Grid>
 </Page>
