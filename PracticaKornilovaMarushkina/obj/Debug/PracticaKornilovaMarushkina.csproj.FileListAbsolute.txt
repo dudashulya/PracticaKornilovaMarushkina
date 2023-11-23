@@ -42,7 +42,6 @@ C:\Users\212112\Source\Repos\PracticaKornilovaMarushkina\PracticaKornilovaMarush
 C:\Users\212112\Source\Repos\PracticaKornilovaMarushkina\PracticaKornilovaMarushkina\obj\Debug\Pages\RedPage.g.cs
 C:\Users\212112\Source\Repos\PracticaKornilovaMarushkina\PracticaKornilovaMarushkina\obj\Debug\Pages\PageDis.baml
 C:\Users\212112\Source\Repos\PracticaKornilovaMarushkina\PracticaKornilovaMarushkina\obj\Debug\Pages\RedPage.baml
-C:\Users\212112\Source\Repos\PracticaKornilovaMarushkina\PracticaKornilovaMarushkina\obj\Debug\PracticaKornilovaMarushkina.csprojAssemblyReference.cache
 C:\Users\212112\Downloads\PracticaKornilovaMarushkina\PracticaKornilovaMarushkina\bin\Debug\PracticaKornilovaMarushkina.exe.config
 C:\Users\212112\Downloads\PracticaKornilovaMarushkina\PracticaKornilovaMarushkina\bin\Debug\PracticaKornilovaMarushkina.exe
 C:\Users\212112\Downloads\PracticaKornilovaMarushkina\PracticaKornilovaMarushkina\bin\Debug\PracticaKornilovaMarushkina.pdb
@@ -134,3 +133,4 @@ C:\Users\212110\Source\Repos\PracticaKornilovaMarushkina\PracticaKornilovaMarush
 C:\Users\212110\Source\Repos\PracticaKornilovaMarushkina\PracticaKornilovaMarushkina\obj\Debug\PracticaKornilovaMarushkina.csproj.CopyComplete
 C:\Users\212110\Source\Repos\PracticaKornilovaMarushkina\PracticaKornilovaMarushkina\obj\Debug\PracticaKornilovaMarushkina.exe
 C:\Users\212110\Source\Repos\PracticaKornilovaMarushkina\PracticaKornilovaMarushkina\obj\Debug\PracticaKornilovaMarushkina.pdb
+C:\Users\212112\Source\Repos\PracticaKornilovaMarushkina\PracticaKornilovaMarushkina\obj\Debug\PracticaKornilovaMarushkina.csproj.AssemblyReference.cache
